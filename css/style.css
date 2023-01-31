@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Paprika&display=swap');
+
+* {
+    font-family: 'Paprika', cursive;
+}
+.contenedor {
+    width: 100%;
+    max-width: 10000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#navegacion {
+    text-align: end;
+    width: auto;
+    margin: auto;
+    background-color: gray
+}
+
+#body {
+    background-color: #323334;
+    color: white;
+}
+
+#descarga {
+    font-family: 'Paprika', cursive;
+    font-size: 70%;
+}
+
+#navegacion ul {
+
+    list-style: none;
+}
+
+#img-pdf {
+    height: 40px;
+   
+}
+
+#boton {
+    margin-left: 30px;
+}
+
+.carousel-inner{
+    width: 30%;
+    height: 30%;
+
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: beige;
+    font-family: "_open sans_";
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: aqua;
+    transition: all 3s;
+
+}
+
+.submenu {
+    position: absolute;
+    width: 80px;
+    background-color: grey;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: beige;
+    font-family: "_open sans_";
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-profile {
+    border-radius: 80px;
+}
+
+.div-profile {
+    border-radius: 20px solid black;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.personal-info a img:hover {
+    width: 75px;
+    padding: 20;
+}
+
+.personal-info a img {
+    padding: 12.5px;
+    width: 50px;
+
+}
+
+#audio-cv {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.personal-info {
+    text-align: center;
+}
+
+.user-name {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    height: 50px;
+    font-size: 80%;
+}
+
+#copy {
+    padding-top: 10px;
+
+}
+
+@media screen and (max-width: 800px){
+    .contenedor {
+        background-color: orange;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor {
+        background-color: blue;
+
+    }
+  
+}
