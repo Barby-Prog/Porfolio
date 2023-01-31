@@ -12,42 +12,54 @@
 </head>
 
 <body id="body">
-    <div class="contenedor" >
-    <nav id="navegacion">
-        <ul class="menu">
-            <li>
-                <a id="descarga" href="./archivo/cv.pdf" download="cv-pdf"><img id="img-pdf" src="iconos/icono-pdf.png" alt="cv">
-                    Descargar CV</a>
-            </li>
-        </ul>
+    <div class="contenedor">
+        <nav id="navegacion">
+            <ul class="menu">
+                <li>
+                    <a id="#" href="/experiencia.html">Experiencia Laboral</a>
+                </li>
+                <li>
+                    <a id="#" href="/educacion.html">Educación</a>
+                </li>
+                <li>
+                    <a id="#" href="/habilidades.html">Habilidades</a>
+                </li>
 
-    </nav>
-    <div id="boton" class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
-            onchange="setDarkMode()" checked>
-        <label class="form-check-label" for="mySwitch">Modo oscuro</label>
-    </div>
+                <li>
+                    <a id="descarga" href="./archivo/cv.pdf" download="cv-pdf"><img id="img-pdf"
+                            src="iconos/icono-pdf.png" alt="cv">
+                        Descargar CV</a>
+                </li>
+            </ul>
 
-    <div class="div-profile">
-        <img id="foto-cv" src="#" class="img-profile" alt="foto cv">
-    </div>
-    <div id="audio-cv">
-        <audio preload="auto" src="./audio/grabacioncv.m4a" controls>
-        </audio>
-    </div>
-    <div class="user-name">
-        <p id="titulo"></p>
-        <p id="dato"></p>
-    </div>
-    <div class="personal-info">
-        <a href="#"><img src="iconos/usuarios.png" alt="usuario" onclick="obtenerNombre()"></a>
-        <a href="#"><img src="iconos/mail.png" alt="mail" onclick="obtenerMail()"></a>
-        <a href="#"><img src="iconos/calendario.png" alt="calendario" onclick="obtenerFecha()"></a>
-        <a href="#"><img src="iconos/ubicacion.png" alt="ubicacion" onclick=" obtenerdireccion()"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="iconos/linkedin.png" alt="linkedin"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="iconos/instagram.png" alt="instagram"></a>
-        <a href="#"><img src="iconos/wsp.png" alt="whatsapp" onclick="obtenerTelefono()"></a>
-    </div>
+
+        </nav>
+        <div id="boton" class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                onchange="setDarkMode()" checked>
+            <label class="form-check-label" for="mySwitch">Modo oscuro</label>
+        </div>
+
+        <div class="div-profile">
+            <img id="foto-cv" src="#" class="img-profile" alt="foto cv">
+        </div>
+        <div id="audio-cv">
+            <audio preload="auto" src="./audio/grabacioncv.m4a" controls>
+            </audio>
+        </div>
+        <div class="user-name">
+            <p id="titulo"></p>
+            <p id="dato"></p>
+        </div>
+        <div class="personal-info">
+            <a href="#"><img src="iconos/usuarios.png" alt="usuario" onclick="obtenerNombre()"></a>
+            <a href="#"><img src="iconos/mail.png" alt="mail" onclick="obtenerMail()"></a>
+            <a href="#"><img src="iconos/calendario.png" alt="calendario" onclick="obtenerFecha()"></a>
+            <a href="#"><img src="iconos/ubicacion.png" alt="ubicacion" onclick=" obtenerdireccion()"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="iconos/linkedin.png" alt="linkedin"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="iconos/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="iconos/wsp.png" alt="whatsapp" onclick="obtenerTelefono()"></a>
+        </div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
