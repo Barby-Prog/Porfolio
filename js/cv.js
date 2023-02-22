@@ -2,7 +2,6 @@ $.ajax({
     url: 'https://randomuser.me/api/',
     dataType: 'json',
     success: function (data) {
-        console.log(data);
         window.datosCV = {
             name: data.results[0].name.first,
             mail: data.results[0].email,
@@ -13,38 +12,47 @@ $.ajax({
         }
         document.getElementById('foto-cv').src = data.results[0].picture.large;
 
-        console.log(window.datosCV);
     }
-});
+})
 
 window.modoDark = {
     activado: true
 }
 
-function obtenerNombre() {
+var nombre = document.querySelector('#nombre');
+nombre.addEventListener('click', function () {
     document.getElementById('titulo').innerHTML = 'Hola! Mi nombre es:';
     document.getElementById('dato').innerHTML = window.datosCV.name;
-}
 
-function obtenerMail() {
+
+})
+
+var mailUser = document.querySelector('#mailUser');
+mailUser.addEventListener('click', function () {
     document.getElementById('titulo').innerHTML = 'mail:';
     document.getElementById('dato').innerHTML = window.datosCV.mail;
-}
+})
 
-function obtenerFecha() {
+var fechaNacimiento = document.querySelector('#fechaNacimiento');
+fechaNacimiento.addEventListener('click', function () {
     document.getElementById('titulo').innerHTML = 'Fecha de cumpleaños:';
     document.getElementById('dato').innerHTML = window.datosCV.nacimiento.substring(0, 10);
-}
 
-function obtenerdireccion() {
+})
+
+var direccionUser = document.querySelector('#direccionUser');
+direccionUser.addEventListener('click', function () {
     document.getElementById('titulo').innerHTML = 'Direccion:';
     document.getElementById('dato').innerHTML = window.datosCV.ubicacion;
-}
 
-function obtenerTelefono() {
+})
+
+var telefonoUser = document.querySelector('#telefonoUser');
+telefonoUser.addEventListener('click', function () {
     document.getElementById('titulo').innerHTML = 'Telefono de contacto:';
     document.getElementById('dato').innerHTML = window.datosCV.telefono;
-}
+
+})
 
 function setDarkMode() {
     var body = document.getElementById('body');

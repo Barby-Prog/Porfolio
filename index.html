@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -39,7 +39,6 @@
                 onchange="setDarkMode()" checked>
             <label class="form-check-label" for="mySwitch">Modo oscuro</label>
         </div>
-
         <div class="div-profile">
             <img id="foto-cv" src="#" class="img-profile" alt="foto cv">
         </div>
@@ -52,15 +51,15 @@
             <p id="dato"></p>
         </div>
         <div class="personal-info">
-            <a href="#"><img src="iconos/usuarios.png" alt="usuario" onclick="obtenerNombre()"></a>
-            <a href="#"><img src="iconos/mail.png" alt="mail" onclick="obtenerMail()"></a>
-            <a href="#"><img src="iconos/calendario.png" alt="calendario" onclick="obtenerFecha()"></a>
-            <a href="#"><img src="iconos/ubicacion.png" alt="ubicacion" onclick=" obtenerdireccion()"></a>
+            <a id="nombre" href="#"><img src="iconos/usuarios.png" alt="usuario"></a>
+            <a id="mailUser" href="#"><img src="iconos/mail.png" alt="mail"></a>
+            <a id="fechaNacimiento" href="#"><img src="iconos/calendario.png" alt="calendario"></a>
+            <a id="direccionUser" href="#"><img src="iconos/ubicacion.png" alt="ubicacion"></a>
             <a href="https://www.linkedin.com/" target="_blank"><img src="iconos/linkedin.png" alt="linkedin"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="iconos/instagram.png" alt="instagram"></a>
-            <a href="#"><img src="iconos/wsp.png" alt="whatsapp" onclick="obtenerTelefono()"></a>
+            <a id="telefonoUser" href="#"><img src="iconos/wsp.png" alt="whatsapp"></a>
         </div>
-
+    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
